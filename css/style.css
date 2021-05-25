@@ -2,6 +2,9 @@
   --color-accent: rgba(33, 150, 243, 1);
   --color-title: rgba(33, 33, 33, 1);
   --color-text: rgba(117, 117, 117, 1);
+  --background-footer: rgba(47, 48, 58, 1);
+  --background-section-1: #e5e5e5;
+  --background-section-2: #f5f4fa;
 }
 * {
   box-sizing: content-box;
@@ -26,7 +29,6 @@ a {
 
 .heder {
   width: 1600px;
-  height: 80px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -57,6 +59,10 @@ a {
 .nav-list a:focus {
   color: var(--color-accent);
 }
+/* current подсветка текущей страницы */
+.nav-list .nav-item .current {
+  color: var(--color-accent);
+}
 .nav-item {
   padding: 0 50px;
 }
@@ -64,6 +70,7 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.172;
+  color: var(--color-text);
   display: flex;
   justify-content: space-between;
 }
@@ -77,9 +84,8 @@ a {
 /* main style */
 
 .hero {
-  height: 600px;
   width: 1600px;
-  background: rgba(47, 48, 58, 1);
+  background: var(--background-footer);
 }
 
 .hero-title {
@@ -96,13 +102,15 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
-.hero button {
+.hero-button {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;
   padding: 10px 32px;
 }
+
 /* main style portfolio+ */
+
 .list-button {
   display: flex;
   justify-content: center;
@@ -156,6 +164,8 @@ button {
   font-size: 16px;
   line-height: 1.9;
 }
+
+/* footer style */
 .text-adress {
   font-size: 14px;
   line-height: 1.72;
@@ -167,11 +177,10 @@ button {
 .address-link:hover {
   color: #ffffff;
 }
-
-/* footer style */
-
 .footer {
   background: rgba(47, 48, 58, 1);
-  height: 252px;
   width: 1600px;
+}
+.footer-list {
+  font-style: normal;
 }
